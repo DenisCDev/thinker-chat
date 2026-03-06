@@ -53,12 +53,12 @@ export default function AssistantsPage() {
       </div>
 
       {/* Cards Grid */}
-      <div className="flex flex-wrap justify-center gap-6 max-w-7xl w-full mb-12">
+      <div className="flex flex-wrap justify-center gap-4 max-w-7xl w-full mb-12 px-2">
         {assistants.map((assistant, index) => (
           <div
             key={assistant.id}
             onClick={() => handleSelectAssistant(assistant)}
-            className="group bg-card rounded-2xl p-6 cursor-pointer card-hover border border-border/50 hover:border-border w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] xl:w-[calc(20%-1.2rem)] min-w-[220px]"
+            className="group bg-card rounded-2xl p-5 cursor-pointer card-hover border border-border/50 hover:border-border w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] xl:w-[calc(20%-0.8rem)] min-w-[170px]"
           >
             {/* Number Badge */}
             <div className="flex justify-center mb-4">
