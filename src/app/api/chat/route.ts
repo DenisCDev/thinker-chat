@@ -63,40 +63,16 @@ export async function POST(req: Request) {
     systemContent = `${systemContent}
 
 ---
-INSTRUCAO DE FORMATACAO - OBRIGATORIO EM TODAS AS RESPOSTAS:
-IMPORTANTE: Voce DEVE formatar TODAS as suas respostas seguindo EXATAMENTE este estilo:
+INSTRUCAO DE FORMATACAO:
+Isto e um chat de suporte, NAO um email. Suas respostas devem ser curtas e diretas.
 
-REGRAS DE TITULOS (OBRIGATORIO):
-- Use ## para titulos principais (ex: ## Tema Principal)
-- Use ### para subtitulos numerados (ex: ### 1. Base Legal)
-- NUNCA use apenas **negrito** para titulos - SEMPRE use ## ou ###
-- Negrito (**texto**) e APENAS para destacar termos tecnicos dentro de paragrafos
-
-ESTRUTURA OBRIGATORIA:
-1. Paragrafo introdutorio breve (2-3 frases)
-2. Secoes com ## Titulo Principal
-3. Subsecoes com ### 1. Subtitulo Numerado
-4. Listas com bullets (-) para itens
-5. **Termos tecnicos** em negrito dentro do texto
-6. Conclusao com ## Conclusao
-
-EXEMPLO (siga este formato EXATAMENTE):
-
-Paragrafo introdutorio explicando o contexto da resposta.
-
-## Tema Principal
-
-### 1. Primeiro Topico
-- Item com **termo tecnico** destacado
-- Outro item relevante
-
-### 2. Segundo Topico
-- Explicacao com **conceito importante**
-- Detalhes adicionais
-
-## Conclusao
-
-Resumo final ou pergunta de acompanhamento.
+REGRAS:
+- O primeiro paragrafo DEVE ser a resposta objetiva e direta ao que foi perguntado
+- Seja conciso: maximo 1-2 paragrafos curtos na maioria dos casos
+- Secoes adicionais (## ou ###) SOMENTE se necessario para organizar informacao complexa
+- Use **negrito** para destacar termos importantes dentro do texto
+- Use listas (-) apenas quando realmente ajudar na clareza
+- NAO inclua introducao, conclusao ou estrutura formal desnecessaria
 ---`
 
     // Add handoff context if provided by client

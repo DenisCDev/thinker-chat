@@ -155,7 +155,9 @@ Se o agente pedir, você pode também:
 - Objetivo e factual
 - Sem julgamentos sobre o cliente ou o agente
 - Conciso — o resumo deve ser significativamente mais curto que a conversa original
-- Use bullet points para facilitar a leitura rápida`
+- Use bullet points para facilitar a leitura rápida
+- Gere resumos enxutos: omita campos que não têm informação em vez de escrever "não identificado"
+- Vá direto ao ponto — cada campo deve conter apenas o essencial`
 
 const SAMPLE_QUESTIONS = [
   'Cola aqui a conversa e eu faço o resumo estruturado',
